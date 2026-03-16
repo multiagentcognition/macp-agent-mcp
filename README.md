@@ -45,6 +45,11 @@ Optional workspace extensions:
 - vault/docs: `macp_ext_register_vault`, `macp_ext_search_vault`, `macp_ext_get_vault_doc`, `macp_ext_list_vault_docs`
 - context search: `macp_ext_query_context`
 
+## Requirements
+
+- Node.js 22.5+
+- An MCP-capable host (Claude Code, OpenCode, Gemini CLI, Cursor, VS Code)
+
 ## Related
 
 - [macp](https://github.com/multiagentcognition/macp) — the protocol: spec, schema, core logic, and extensions
