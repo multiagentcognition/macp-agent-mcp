@@ -1,0 +1,55 @@
+{
+  "name": "macp-agent-mcp",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "MCP server that gives AI agents access to the Multi-Agent Cognition Protocol.",
+  "license": "Apache-2.0",
+  "main": "./build/src/index.js",
+  "types": "./build/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/src/index.d.ts",
+      "import": "./build/src/index.js"
+    },
+    "./server": {
+      "types": "./build/src/server.d.ts",
+      "import": "./build/src/server.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "macp-agent-mcp": "build/src/cli.js",
+    "macp-server": "build/src/server.js"
+  },
+  "files": [
+    "build/src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multiagentcognition/macp-agent-mcp.git"
+  },
+  "homepage": "https://macp.dev",
+  "keywords": [
+    "agents",
+    "ai",
+    "mcp",
+    "coordination",
+    "protocol"
+  ],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "validate": "npm run build && node build/src/cli.js --help && node build/src/server.js --help"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "macp": "file:../macp",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}
