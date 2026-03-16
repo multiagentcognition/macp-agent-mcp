@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "type": "module",
   "description": "MCP server that gives AI agents access to the Multi-Agent Cognition Protocol.",
-  "license": "Apache-2.0",
+  "license": "PolyForm-Strict-1.0.0",
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
   "exports": {

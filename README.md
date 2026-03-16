@@ -48,8 +48,8 @@ Optional workspace extensions:
 ## Related
 
 - [macp](https://github.com/multiagentcognition/macp) — the protocol: spec, schema, core logic, and extensions
-- [openclaw](https://github.com/multiagentcognition/openclaw) — OpenClaw plugin that also exposes MACP coordination
+- [macp-openclaw-plugin](https://github.com/multiagentcognition/macp-openclaw-plugin) — OpenClaw plugin that also exposes MACP coordination
 
 ## License
 
-[Apache 2.0](LICENSE)
+[PolyForm Strict 1.0.0](LICENSE)
